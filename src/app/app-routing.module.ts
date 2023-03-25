@@ -1,3 +1,4 @@
+import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'admin/admin-products', component: AdminProductsComponent },
   { path: 'admin/admin-orders', component: AdminOrdersComponent },
-  { path: 'my-orders', component: MyOrdersComponent }
+  { path: 'my-orders', component: MyOrdersComponent },
+  { path: 'admin/product/new', component: ProductFormComponent }
 
 ];
 
