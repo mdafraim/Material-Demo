@@ -23,6 +23,8 @@
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.2.3",
+    "build": "^0.1.4",
+    "clean": "^4.0.2",
     "firebase": "^9.18.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

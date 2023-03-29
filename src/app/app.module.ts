@@ -21,6 +21,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { CategoryService } from './category.service';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -46,7 +47,8 @@ import { CategoryService } from './category.service';
     AngularFireDatabaseModule,
     NgbModule,
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    CommonModule
   ],
   providers: [
     CategoryService

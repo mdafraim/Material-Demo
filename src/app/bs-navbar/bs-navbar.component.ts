@@ -1,12 +1,8 @@
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Component, OnInit } from '@angular/core';
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase/auth';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
-
-
-import { FirebaseApp } from '@angular/fire/app';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'bs-navbar',
@@ -15,8 +11,10 @@ import { Observable } from 'rxjs';
 })
 export class BsNavbarComponent implements OnInit {
   
+  user: firebase.User;
   isMenuCollapsed = true;
   constructor(private afAuth: AngularFireAuth ) {   
+    afAuth.authState.subscribe(user => this.user = user);
   }
 
   ngOnInit(): void {
